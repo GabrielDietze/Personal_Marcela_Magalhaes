@@ -9,7 +9,8 @@ function App() {
       {/* Header/Hero Section */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 via-black to-black"></div>
-        <nav className="relative z-10 px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-lg border-b border-amber-500/20 px-6 py-4 flex justify-between items-center">
+          <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img src="/logo[1].png" alt="Marcela Magalhães" className="h-12 w-auto" />
           </div>
@@ -30,11 +31,12 @@ function App() {
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
+          </div>
         </nav>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 bg-black/95 backdrop-blur-lg border-b border-amber-500/20 z-50">
+          <div className="md:hidden fixed top-20 left-0 right-0 bg-black/95 backdrop-blur-lg border-b border-amber-500/20 z-40">
             <div className="px-6 py-4 space-y-4">
               <a
                 href="#sobre"
@@ -68,28 +70,45 @@ function App() {
           </div>
         )}
 
-        <div className="relative z-10 px-6 py-24 max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-amber-500">Marcela Magalhães</span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Credenciada pela Federação Mineira de Educação Física.
-              Especializada em treinamento personalizado para alcançar seus objetivos com eficiência.
-            </p>
-            <a href="https://wa.me/5531991873621?text=Olá%20Marcela!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20Personal%20Trainer." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-amber-500 text-black px-8 py-4 rounded-lg font-semibold hover:bg-amber-600 transition-all transform hover:scale-105">
-              Entre em Contato
-              <MessageCircle size={20} />
+        <div className="relative z-10 px-6 pt-32 pb-16 max-w-7xl mx-auto min-h-screen flex flex-col justify-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
+                <span className="text-amber-500">Marcela Magalhães</span>
+              </h1>
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed animate-fade-in-delay">
+                Credenciada pela Federação Mineira e profissional de Educação Física.
+                Especializada em treinamento personalizado para alcançar seus objetivos com eficiência.
+              </p>
+            </div>
+            <div className="hidden md:block animate-fade-in-delay">
+              <div className="relative w-full max-w-md mx-auto">
+                <div className="aspect-square rounded-2xl overflow-hidden border-2 border-amber-500/30 shadow-2xl shadow-amber-500/20">
+                  <img src="/Imagem do WhatsApp de 2025-10-05 à(s) 10.58.16_f9609f85.jpg" alt="Marcela Magalhães" className="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center mt-16 md:mt-20 animate-fade-in-delay-2">
+            <a href="#sobre" className="group flex flex-col items-center gap-2 text-amber-500/60 hover:text-amber-500 transition-all duration-300">
+              <div className="w-8 h-12 border-2 border-current rounded-full flex items-start justify-center p-2">
+                <div className="w-1 h-2 bg-current rounded-full animate-scroll"></div>
+              </div>
             </a>
           </div>
         </div>
       </header>
 
       {/* Sobre Section */}
-      <section id="sobre" className="py-24 px-6 bg-gradient-to-b from-black to-neutral-950">
+      <section id="sobre" className="py-16 px-6 bg-gradient-to-b from-black to-neutral-950">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="relative order-2 md:order-1">
+              <div className="aspect-square rounded-2xl overflow-hidden border-2 border-amber-500/30 max-w-sm md:max-w-none mx-auto">
+                <img src="/Imagem do WhatsApp de 2025-10-05 à(s) 10.58.15_64f7e4f2.jpg" alt="Marcela Magalhães" className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
               <h2 className="text-4xl font-bold mb-6 text-amber-500">Meu Objetivo</h2>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
                 Minha missão é ajudar você a conquistar seus objetivos de forma eficiente e rápida,
@@ -110,17 +129,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden border-2 border-amber-500/30">
-                <img src="/Imagem do WhatsApp de 2025-10-05 à(s) 10.58.15_64f7e4f2.jpg" alt="Marcela Magalhães" className="w-full h-full object-cover" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Especialização Section */}
-      <section id="especializacao" className="py-24 px-6 bg-neutral-950">
+      <section id="especializacao" className="py-16 px-6 bg-neutral-950">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Award className="text-amber-500 mx-auto mb-4" size={48} />
@@ -191,7 +205,7 @@ function App() {
       </section>
 
       {/* Serviços e Preços Section */}
-      <section id="servicos" className="py-24 px-6 bg-gradient-to-b from-neutral-950 to-black">
+      <section id="servicos" className="py-16 px-6 bg-gradient-to-b from-neutral-950 to-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Serviços e <span className="text-amber-500">Investimento</span></h2>
@@ -349,7 +363,7 @@ function App() {
       </section>
 
       {/* Contato Section */}
-      <section id="contato" className="py-24 px-6 bg-black">
+      <section id="contato" className="py-16 px-6 bg-black">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Entre em <span className="text-amber-500">Contato</span></h2>
