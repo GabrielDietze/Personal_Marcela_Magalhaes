@@ -257,8 +257,8 @@ function App() {
               <div className="bg-black/50 rounded-xl p-6 mb-6 border border-amber-500/30">
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-4 mb-2">
-                    <span className="text-2xl text-gray-500 line-through">R$120</span>
-                    <span className="text-5xl font-bold text-amber-500">R$85</span>
+                    <span className="text-2xl text-gray-500 line-through">R$150</span>
+                    <span className="text-5xl font-bold text-amber-500">R$120</span>
                   </div>
                   <p className="text-amber-400 font-semibold text-lg">VALOR PROMOCIONAL</p>
                   <p className="text-gray-400 text-sm mt-2">por aula de 1 hora</p>
