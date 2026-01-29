@@ -40,7 +40,7 @@ export function Hero() {
 
               <div className="inline-flex items-center gap-2 border-l-4 border-amber-500 pl-4 py-1 bg-amber-500/5">
                 <span className="text-white text-[10px] md:text-xs font-black tracking-[0.2em] uppercase">
-                  Credenciada pela Federação Mineira
+                  Credenciada pela Federação Mineira <span className="text-amber-500">e Bacharel em Educação Física</span>
                 </span>
               </div>
 
