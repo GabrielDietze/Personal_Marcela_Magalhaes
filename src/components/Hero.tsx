@@ -44,16 +44,13 @@ export function Hero() {
                 </span>
               </div>
 
-              <p className="text-base md:text-xl text-gray-200 leading-relaxed max-w-xl font-medium">
-                Treinamento baseado em <span className="text-amber-500 font-bold">Biomecânica aplicada</span>. 
-                Resultados reais e sem dores.
-              </p>
+
             </div>
 
             {/* Botões */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#servicos"
+                href="#metodologia"
                 className="group px-8 py-4 bg-amber-500 text-black font-black rounded-xl transition-all shadow-lg text-center text-sm md:text-base hover:scale-105 active:scale-95"
               >
                 QUERO SABER MAIS
