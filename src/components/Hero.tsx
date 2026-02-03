@@ -23,7 +23,7 @@ export function Hero() {
             {/* Título */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tighter text-white">
-                Treinamento <span className="text-amber-500">personalizado</span>
+               Sua evolução física com <span className="text-amber-500">precisão. </span>
               </h1>
 
               {/* IMAGEM MOBILE: Visível apenas no celular */}
