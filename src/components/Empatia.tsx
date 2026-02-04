@@ -2,7 +2,7 @@ import { AlertCircle, Clock, Heart, ArrowRight } from 'lucide-react';
 
 export function Empatia() {
   return (
-    <section id="empatia" className="relative py-14 md:py-24 lg:py-32 px-4 md:px-6 bg-gradient-to-b from-black via-neutral-950 to-black overflow-hidden">
+    <section id="empatia" className="relative py-10 md:py-16 lg:py-24 px-4 md:px-6 bg-gradient-to-b from-black via-neutral-950 to-black overflow-hidden">
       {/* Background decorativo */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500 rounded-full blur-3xl"></div>

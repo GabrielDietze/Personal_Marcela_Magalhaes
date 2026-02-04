@@ -25,7 +25,7 @@ export function Servicos() {
   ];
 
   return (
-    <section id="servicos" className="relative py-24 md:py-32 px-6 bg-black overflow-hidden">
+    <section id="servicos" className="relative py-16 md:py-24 px-6 bg-black overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-amber-600/10 rounded-full blur-[120px]"></div>
